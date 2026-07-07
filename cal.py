@@ -1,19 +1,19 @@
 import streamlit as st
 
 # App title
-st.title("🧮 Simple Calculator")
+st.title(" Simple Calculator")
 
 # Input numbers
 num1 = st.number_input("Enter first number", format="%f")
 num2 = st.number_input("Enter second number", format="%f")
 
-# Operation selection
+
 operation = st.selectbox(
     "Select an operation",
     ("Addition (+)", "Subtraction (-)", "Multiplication (×)", "Division (÷)")
 )
 
-# Calculate button
+
 if st.button("Calculate"):
     if operation == "Addition (+)":
         result = num1 + num2
